@@ -1,0 +1,235 @@
+<!-- - - - - - - - - - -
+##########################
+## Server Panel Deluxe ###
+### 7 Days to Die Mod ####
+##########################
+###### NO REUPLOAD! ######
+###### USE NEXUS OR ######
+###### MODSFIRE  DL ######
+####### TO SUPPORT #######
+###### THIS PROJECT ######
+##########################
+####### Eihwaz © #########
+##### www.eihwaz.de ######
+##########################
+- - - - - - - - - - - -->
+<eihwaz.de>
+<!-- - - - - - - - - - -
+##########################
+##### GENERAL NOTES ######
+##########################
+- - - - - - - - - - - -->
+<!-- Discord support is only provided for unmodified core versions. -->
+<!-- Use this file to make changes. Read the respective instructions. -->
+<!-- That way your changes will remain after an update. -->
+
+<!-- Tutorial: -->
+<!-- @work -->
+
+<!-- Recommendation: -->
+<!-- Upload and link all graphics and URLs used on your own Github (or similar). -->
+<!-- This increases stability and makes you more independent. -->
+
+<!-- Insider tips: -->
+<!-- With the command "xui reload" you can reload the UI in-game in the console (dm). -->
+<!-- Since 1.0 all images must be 3 times as large as required (width/height). -->
+
+
+<!-- - - - - - - - - - -
+##########################
+######### HEADER #########
+##########################
+- - - - - - - - - - - -->
+<!-- You can enter the text directly or set keys to translate it in localization.txt. -->
+<!-- To make text colored you have to set a key and use the localization.txt. -->
+
+<!-- Title: -->
+<set xpath="/windows/window[@name='windowSPD']/panel[@name='core']/rect[@name='header']/label[@name='headerTitle']/@text_key">CWB PvE</set> <!--text-->
+<!-- <remove xpath="/windows/window[@name='windowSPD']/panel[@name='core']/rect[@name='header']/label[@name='headerTitle']"/> -->
+
+<!-- Motto: -->
+<set xpath="/windows/window[@name='windowSPD']/panel[@name='core']/rect[@name='header']/label[@name='headerMotto']/@text_key">Curitiba/Pr</set> <!--text-->
+<!-- <remove xpath="/windows/window[@name='windowSPD']/panel[@name='core']/rect[@name='header']/label[@name='headerTitle']"/> -->
+
+<!-- Background: -->
+<set xpath="/windows/window[@name='windowSPD']/panel[@name='core']/rect[@name='header']/sprite[@name='headerBorder']/@color">[black]</set> <!--color-->
+<set xpath="/windows/window[@name='windowSPD']/panel[@name='core']/rect[@name='header']/sprite[@name='headerBackground']/@color">20,18,18</set> <!--color-->
+
+<!-- PNG LOGO-->
+<!-- Create a header with dimensions of 2286x342 and upload it (e.g. Github). -->
+<!-- Copy the raw URL and replace it with the transparent dummy (keep @). -->
+<!-- If necessary, change title/motto to a space in the localization.txt. -->
+<!--
+<append xpath="/windows/window[@name='windowSPD']/panel[@name='core']/rect[@name='header']">
+	<texture name="headerLogo" depth="30" pos="384,-61" width="762" height="114" pivot="center" texture="@https://github.com/EihwazDE/resources/blob/main/spd/spd_header.png?raw=true"/>
+</append>
+-->
+
+
+
+<!-- - - - - - - - - - -
+##########################
+#### CLICKABLE LINKS #####
+##########################
+- - - - - - - - - - - -->
+<!-- You can enter the text directly or set keys to translate it in localization.txt. -->
+<!-- Create a icon with dimensions of 108x108 and upload it (e.g. Github). -->
+<!-- Edit a linkUrl_dummy.xml from upload folder and upload it (e.g. Github). -->
+<!-- Copy the raw URL and replace it with the existing one (keep @). -->
+
+<!-- Link 1: -->
+<set xpath="/windows/window[@name='windowSPD']/panel[@name='core']/rect[@name='links']/rect[@name='link1']/rect/button/@tooltip_key">DISCORD</set> <!--hoverText-->
+<set xpath="/windows/window[@name='windowSPD']/panel[@name='core']/rect[@name='links']/rect[@name='link1']/texture/@texture">@https://github.com/EihwazDE/resources/blob/main/spd/spd_discord.png?raw=true</set> <!--imgURL-->
+<set xpath="/windows/window[@name='windowSPD']/panel[@name='core']/rect[@name='links']/rect[@name='link1']/rect/@sources">https://raw.githubusercontent.com/EihwazDE/resources/main/spd/linkURL_1.xml</set> <!--linkURL-->
+<!-- disable -->
+<!-- <remove xpath="/windows/window[@name='windowSPD']/panel[@name='core']/rect[@name='links']/rect[@name='link1']"/> -->
+
+<!-- Link 2: -->
+<set xpath="/windows/window[@name='windowSPD']/panel[@name='core']/rect[@name='links']/rect[@name='link2']/rect/button/@tooltip_key">TWITCH</set> <!--hoverText-->
+<set xpath="/windows/window[@name='windowSPD']/panel[@name='core']/rect[@name='links']/rect[@name='link2']/texture/@texture">@https://github.com/EihwazDE/resources/blob/main/spd/spd_twitch.png?raw=true</set> <!--imgURL-->
+<set xpath="/windows/window[@name='windowSPD']/panel[@name='core']/rect[@name='links']/rect[@name='link2']/rect/@sources">https://raw.githubusercontent.com/EihwazDE/resources/main/spd/linkURL_2.xml</set> <!--linkURL-->
+<!-- disable -->
+<!-- <remove xpath="/windows/window[@name='windowSPD']/panel[@name='core']/rect[@name='links']/rect[@name='link2']"/> -->
+
+<!-- Link 3: -->
+<set xpath="/windows/window[@name='windowSPD']/panel[@name='core']/rect[@name='links']/rect[@name='link3']/rect/button/@tooltip_key">YOUTUBE</set> <!--hoverText-->
+<set xpath="/windows/window[@name='windowSPD']/panel[@name='core']/rect[@name='links']/rect[@name='link3']/texture/@texture">@https://github.com/EihwazDE/resources/blob/main/spd/spd_youtube.png?raw=true</set> <!--imgURL-->
+<set xpath="/windows/window[@name='windowSPD']/panel[@name='core']/rect[@name='links']/rect[@name='link3']/rect/@sources">https://raw.githubusercontent.com/EihwazDE/resources/main/spd/linkURL_3.xml</set> <!--linkURL-->
+<!-- disable -->
+<!-- <remove xpath="/windows/window[@name='windowSPD']/panel[@name='core']/rect[@name='links']/rect[@name='link3']"/> -->
+
+<!-- Link 4: -->
+<set xpath="/windows/window[@name='windowSPD']/panel[@name='core']/rect[@name='links']/rect[@name='link4']/rect/button/@tooltip_key">LINKTREE</set> <!--hoverText-->
+<set xpath="/windows/window[@name='windowSPD']/panel[@name='core']/rect[@name='links']/rect[@name='link4']/texture/@texture">@https://github.com/EihwazDE/resources/blob/main/spd/spd_linktree.png?raw=true</set> <!--imgURL-->
+<set xpath="/windows/window[@name='windowSPD']/panel[@name='core']/rect[@name='links']/rect[@name='link4']/rect/@sources">https://raw.githubusercontent.com/EihwazDE/resources/main/spd/linkURL_4.xml</set> <!--linkURL-->
+<!-- disable -->
+<!-- <remove xpath="/windows/window[@name='windowSPD']/panel[@name='core']/rect[@name='links']/rect[@name='link4']"/> -->
+
+
+
+<!-- - - - - - - - - - -
+##########################
+######## READ ALL ########
+##########################
+- - - - - - - - - - - -->
+<!-- You can enter the text directly or set keys to translate it in localization.txt. -->
+<!-- To make text colored you have to set a key and use the localization.txt. -->
+<set xpath="/windows/window[@name='windowSPD']/panel[@name='core']/rect[@name='readAll']/label[@name='readAllText']/@text_key">spd_readAll</set> <!--text-->
+<set xpath="/windows/window[@name='windowSPD']/panel[@name='core']/rect[@name='readAll']/sprite[@name='readAllBorder']/@color">[black]</set> <!--color-->
+<set xpath="/windows/window[@name='windowSPD']/panel[@name='core']/rect[@name='readAll']/sprite[@name='readAllBackground']/@color">[black]</set> <!--color-->
+
+
+
+<!-- - - - - - - - - - -
+##########################
+####### TAB CONTENT ######
+##########################
+- - - - - - - - - - - -->
+<!-- You can enter the text directly or set keys to translate it in localization.txt. -->
+<!-- To make text colored you have to set a key and use the localization.txt. -->
+<!-- You can also add new text boxes, images and url buttons (size/position may need to be adjusted). -->
+
+<!--
+	EXAMPLES:
+
+	TEXT BOX:
+	<label depth="13" pos="12,-62" text_key="NEW_KEY_FOR_LOCALIZATION.TXT" parse_actions="true" width="743" height="643" />	
+	
+	IMAGES:
+	<texture name="webImage" depth="60" pos="384,-395" width="559" height="390" pivot="center" texture="@https://IMAGEURL"/>
+	
+	BUTTON:
+	<rect name="SOME_NAME" depth="30" height="46" width="250" pos="259,-630" controller="NewsWindow" sources="https://LINKURL">
+		<button name="btnLink" hoverscale="1" defaultcolor="100,100,100,255" disabledcolor="0,0,0,1" hovercolor="100,100,100,100" type="sliced" enabled="{has_link}" gamepad_selectable="{has_news}" tooltip_key="HOVER_TEXT"/>
+		<label name="btntext" depth="31" pos="0,-6" font_size="36" color="255,255,255" justify="center" text_key="BUTTON_LABEL" effect="Outline8" effect_color="0,0,0,255" effect_distance="1,1" />
+	</rect>
+-->
+
+<!-- TAB 1 -->
+<!-- Button -->
+<set xpath="/windows/window[@name='windowSPD']/panel[@name='core']/rect[@name='tabs']/rect[@name='tabsContents']/rect[@name='content1']/@tooltip_key">spd_Button1</set> <!--hoverText-->
+<set xpath="/windows/window[@name='windowSPD']/panel[@name='core']/rect[@name='tabs']/rect[@name='tabsHeader']/rect[@name='button1']/sprite/@sprite">server_stock</set> <!--icon-->
+<set xpath="/windows/window[@name='windowSPD']/panel[@name='core']/rect[@name='tabs']/rect[@name='tabsHeader']/rect[@name='button1']/sprite/@color">[white]</set> <!--color-->
+<!-- Title -->
+<set xpath="/windows/window[@name='windowSPD']/panel[@name='core']/rect[@name='tabs']/rect[@name='tabsContents']/rect[@name='content1']/rect/label/@text_key">spd_ButtonTitle1</set> <!--text-->
+<!-- Content -->
+<set xpath="/windows/window[@name='windowSPD']/panel[@name='core']/rect[@name='tabs']/rect[@name='tabsContents']/rect[@name='content1']/label/@text_key">spd_TabContent1</set> <!--text-->
+<!-- Extras -->
+<append xpath="/windows/window[@name='windowSPD']/panel[@name='core']/rect[@name='tabs']/rect[@name='tabsContents']/rect[@name='content1']">
+	<!--Example Image (removeable)-->
+	<texture name="webImage" depth="60" pos="384,-395" width="559" height="390" pivot="center" texture="@https://github.com/EihwazDE/resources/blob/main/spd/spd_dummy.jpg?raw=true"/> <!--imgURL-->
+</append>
+
+<!-- TAB 2 -->
+<!-- Button -->
+<set xpath="/windows/window[@name='windowSPD']/panel[@name='core']/rect[@name='tabs']/rect[@name='tabsContents']/rect[@name='content2']/@tooltip_key">spd_Button2</set> <!--hoverText-->
+<set xpath="/windows/window[@name='windowSPD']/panel[@name='core']/rect[@name='tabs']/rect[@name='tabsHeader']/rect[@name='button2']/sprite/@sprite">ui_game_symbol_book</set> <!--icon-->
+<set xpath="/windows/window[@name='windowSPD']/panel[@name='core']/rect[@name='tabs']/rect[@name='tabsHeader']/rect[@name='button2']/sprite/@color">[white]</set> <!--color-->
+<!-- Title -->
+<set xpath="/windows/window[@name='windowSPD']/panel[@name='core']/rect[@name='tabs']/rect[@name='tabsContents']/rect[@name='content2']/rect/label/@text_key">spd_ButtonTitle2</set> <!--text-->
+<!-- Content -->
+<set xpath="/windows/window[@name='windowSPD']/panel[@name='core']/rect[@name='tabs']/rect[@name='tabsContents']/rect[@name='content2']/label/@text_key">spd_TabContent2</set> <!--text-->
+<!-- Extras -->
+<append xpath="/windows/window[@name='windowSPD']/panel[@name='core']/rect[@name='tabs']/rect[@name='tabsContents']/rect[@name='content2']">
+	<!--empty-->
+</append>
+
+<!-- TAB 3 -->
+<!-- Button -->
+<set xpath="/windows/window[@name='windowSPD']/panel[@name='core']/rect[@name='tabs']/rect[@name='tabsContents']/rect[@name='content3']/@tooltip_key">spd_Button3</set> <!--hoverText-->
+<set xpath="/windows/window[@name='windowSPD']/panel[@name='core']/rect[@name='tabs']/rect[@name='tabsHeader']/rect[@name='button3']/sprite/@sprite">ui_game_symbol_twitch_history</set> <!--icon-->
+<set xpath="/windows/window[@name='windowSPD']/panel[@name='core']/rect[@name='tabs']/rect[@name='tabsHeader']/rect[@name='button3']/sprite/@color">[white]</set> <!--color-->
+<!-- Title -->
+<set xpath="/windows/window[@name='windowSPD']/panel[@name='core']/rect[@name='tabs']/rect[@name='tabsContents']/rect[@name='content3']/rect/label/@text_key">spd_ButtonTitle3</set> <!--text-->
+<!-- Content -->
+<set xpath="/windows/window[@name='windowSPD']/panel[@name='core']/rect[@name='tabs']/rect[@name='tabsContents']/rect[@name='content3']/label/@text_key">spd_TabContent3</set> <!--text-->
+<!-- Extras -->
+<append xpath="/windows/window[@name='windowSPD']/panel[@name='core']/rect[@name='tabs']/rect[@name='tabsContents']/rect[@name='content3']">
+	<!--empty-->
+</append>
+
+<!-- TAB 4 -->
+<!-- Button -->
+<set xpath="/windows/window[@name='windowSPD']/panel[@name='core']/rect[@name='tabs']/rect[@name='tabsContents']/rect[@name='content4']/@tooltip_key">spd_Button4</set> <!--hoverText-->
+<set xpath="/windows/window[@name='windowSPD']/panel[@name='core']/rect[@name='tabs']/rect[@name='tabsHeader']/rect[@name='button4']/sprite/@sprite">ui_game_symbol_shopping_cart</set> <!--icon-->
+<set xpath="/windows/window[@name='windowSPD']/panel[@name='core']/rect[@name='tabs']/rect[@name='tabsHeader']/rect[@name='button4']/sprite/@color">[white]</set> <!--color-->
+<!-- Title -->
+<set xpath="/windows/window[@name='windowSPD']/panel[@name='core']/rect[@name='tabs']/rect[@name='tabsContents']/rect[@name='content4']/rect/label/@text_key">spd_ButtonTitle4</set> <!--text-->
+<!-- Content -->
+<set xpath="/windows/window[@name='windowSPD']/panel[@name='core']/rect[@name='tabs']/rect[@name='tabsContents']/rect[@name='content4']/label/@text_key">spd_TabContent4</set> <!--text-->
+<!-- Extras -->
+<append xpath="/windows/window[@name='windowSPD']/panel[@name='core']/rect[@name='tabs']/rect[@name='tabsContents']/rect[@name='content4']">
+	<!--empty-->
+</append>
+
+<!-- TAB 5 -->
+<!-- Button -->
+<set xpath="/windows/window[@name='windowSPD']/panel[@name='core']/rect[@name='tabs']/rect[@name='tabsContents']/rect[@name='content5']/@tooltip_key">spd_Button5</set> <!--hoverText-->
+<set xpath="/windows/window[@name='windowSPD']/panel[@name='core']/rect[@name='tabs']/rect[@name='tabsHeader']/rect[@name='button5']/sprite/@sprite">ui_game_symbol_other</set> <!--icon-->
+<set xpath="/windows/window[@name='windowSPD']/panel[@name='core']/rect[@name='tabs']/rect[@name='tabsHeader']/rect[@name='button5']/sprite/@color">[white]</set> <!--color-->
+<!-- Title -->
+<set xpath="/windows/window[@name='windowSPD']/panel[@name='core']/rect[@name='tabs']/rect[@name='tabsContents']/rect[@name='content5']/rect/label/@text_key">spd_ButtonTitle5</set> <!--text-->
+<!-- Content -->
+<set xpath="/windows/window[@name='windowSPD']/panel[@name='core']/rect[@name='tabs']/rect[@name='tabsContents']/rect[@name='content5']/label/@text_key">spd_TabContent5</set> <!--text-->
+<!-- Extras -->
+<append xpath="/windows/window[@name='windowSPD']/panel[@name='core']/rect[@name='tabs']/rect[@name='tabsContents']/rect[@name='content5']">
+	<!--Example Button (removeable)-->
+	<rect name="content5extra_button" depth="30" height="46" width="250" pos="259,-630" controller="NewsWindow" sources="https://raw.githubusercontent.com/EihwazDE/resources/main/spd/linkURL_4.xml"> <!--linkURL--> <!--pos="259,-630" moves the hole button-->
+		<button name="btnLink" hoverscale="1" defaultcolor="100,100,100,255" disabledcolor="0,0,0,1" hovercolor="100,100,100,100" type="sliced" enabled="{has_link}" gamepad_selectable="{has_news}" tooltip_key="content5extra_buttonHover"/> <!--hoverText-->
+		<label name="btntext" depth="31" pos="0,-6" font_size="36" color="255,255,255" justify="center" text_key="content5extra_buttonText" effect="Outline8" effect_color="0,0,0,255" effect_distance="1,1" /> <!--text-->
+	</rect>
+</append>
+
+<!-- TAB STYLE -->
+<!-- Button -->
+<set xpath="/windows/window[@name='windowSPD']/panel[@name='core']/rect[@name='tabs']/rect[@name='tabsHeader']/rect/simplebutton/@defaultcolor">[darkGrey]</set> <!--color-->
+<set xpath="/windows/window[@name='windowSPD']/panel[@name='core']/rect[@name='tabs']/rect[@name='tabsHeader']/rect/simplebutton/@bordercolor">[black_half_alpha]</set> <!--color-->
+<!-- Title -->
+<set xpath="/windows/window[@name='windowSPD']/panel[@name='core']/rect[@name='tabs']/rect[@name='tabsContents']/rect/rect[@name='headerContent']/sprite[@name='border']/@color">[black]</set> <!--color-->
+<set xpath="/windows/window[@name='windowSPD']/panel[@name='core']/rect[@name='tabs']/rect[@name='tabsContents']/rect/rect[@name='headerContent']/sprite[@name='background']/@color">[black]</set> <!--color-->
+<!-- Content -->
+<set xpath="/windows/window[@name='windowSPD']/panel[@name='core']/rect[@name='tabs']/rect[@name='tabsContents']/rect/sprite[@name='borderContent']/@color">[black]</set> <!--color-->
+<set xpath="/windows/window[@name='windowSPD']/panel[@name='core']/rect[@name='tabs']/rect[@name='tabsContents']/rect/sprite[@name='backgroundContent']/@color">20,18,18</set> <!--color-->
+
+<!-- If you like the mod, leave a sub on Youtube -->
+</eihwaz.de>
